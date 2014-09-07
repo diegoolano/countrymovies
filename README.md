@@ -6,7 +6,10 @@ If you google "countryname best films", you'll get a banner of nicely formated r
 and I thought it'd be interesting and useful to have those all in one page.
 I've additionally linked each movie to a youtube search to view the trailer. 
 
-steps for how you could create the page:
+The final page can be found (it takes a minute to load):
+http://www.diegoolano.com/countries/movies.html
+
+Steps for how you could create the page via phantomjs and bash scripting:
 1) clone code 
 2) in unix, go to directory and run:
 while read c; do echo $c; phantomjs getmoviesbycountry.js $c; sleep 0.1; done < countrylist
